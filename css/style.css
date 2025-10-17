@@ -71,17 +71,17 @@ body {
         display: block;
     }
 }
-.sidebar-container{
-    display: none;
-    z-index: 2000;
-}   
+
 .sidebar{
+   
+    display: none;
     height: 85vh;
     width: 200px;
     position: fixed;
     top: 0;
     right: 0;
     display: flex;
+    display: none;
     flex-direction: column;
     padding-top: 65px;
     gap: 10px;
@@ -89,6 +89,7 @@ body {
     border-radius: 0px 0px 0px 15px ;
     transition:all linear 0.5s;
     backdrop-filter: blur(10px);
+    
  
 }
 .cancel{
@@ -98,7 +99,7 @@ body {
     font-size: 25px;
     cursor: pointer;
     color: black;
-    z-index: 1100;
+    z-index: 2100;
 
 }
 .cancel i:hover{

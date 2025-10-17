@@ -47,3 +47,30 @@ const cardDiscription=[
             </div>
     `}
 
+    const feedbackCard=document.getElementById("feedback-cards-container");
+    const feedback=[
+      "CodeUp helped me transition from a non-tech background to landing my first developer job!",
+      "The courses are well-structured and the projects are practical. Best learning investment I've made.",
+      "Excellent instructor support and community. I learned more here than in my college courses."
+    ]
+    const studentName=[
+      "Nikita Chavhan",
+      "Aditya Singh",
+      "Rohan Kharde"
+    ]
+    const studentRole=[
+      "Frontend Developer at TechSolutions",
+      "Data Analyst at DataCorp",
+      "Software Engineer at Innovatech"
+    ]
+
+    for(let i=0;i<feedback.length;i++){
+      feedbackCard.innerHTML+=`
+     <div class="feedback-card" id="feedback-card">
+       <p>"${feedback[i]}"</p>
+       <div class="student-info">
+           <h3>${studentName[i]}</h3>
+           <span>${studentRole[i]}</span>
+       </div>
+     </div>
+    `}
