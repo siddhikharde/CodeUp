@@ -53,6 +53,12 @@ body {
     font-size: 28px;
     cursor: pointer;
 }
+.hamburger-menu i:hover{
+    color: rgb(39, 39, 231);
+     transform: scale(1.1);
+      filter: drop-shadow(20px black);
+       transition: all linear 0.3s;
+}
 @media (max-width:763px) {
     .nav-links{
         display: none;
@@ -60,6 +66,47 @@ body {
     .hamburger-menu{
         display: block;
     }
+}
+.sidebar-container{
+    display: none;
+}   
+.sidebar{
+    height: 85vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    gap: 10px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 0px 0px 0px 15px ;
+    transition:all linear 0.3s;
+    backdrop-filter: blur(10px);
+ 
+}
+.cancel{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    width: 100%;
+
 }
 .hero-section{
     background:linear-gradient(135deg, #667eea, #764ba2); 
