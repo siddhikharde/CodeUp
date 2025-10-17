@@ -108,3 +108,69 @@ const addHeadingToDemo=()=>{
     })
     
 }
+
+const cardContainer = document.querySelector('.course-cards-container');
+const imgURL= [
+    "../images/course-page-imgs/react.png",
+    "../images/course-page-imgs/advjs.jpeg",
+    "../images/course-page-imgs/nodejs.jpeg",
+    "../images/course-page-imgs/css.jpeg",
+    "../images/course-page-imgs/python.jpeg",
+    "../images/course-page-imgs/ui-ux.jpeg"
+];
+
+const courses = ["React Fundamentals", "Advanced JavaScript", "Node.js Backend Development", "CSS Grid & Flexbox", "Python Data Science", "UI/UX Design"];
+const descriptions = [
+    "Learn the fundamentals of React, including components, state, and props.",
+    "Master advanced JavaScript concepts including closures, prototypes, and async programming.",
+    "Build scalable backend applications with Node.js, Express, and MongoDB.",
+    "Design responsive layouts using CSS Grid and Flexbox techniques.",
+    "Explore data science concepts and libraries using Python.",
+    "Understand the principles of UI/UX design and create user-friendly interfaces."
+];
+const levels = ["Beginner", "Advanced", "Intermediate", "Beginner", "Intermediate", "Beginner"];
+const duration=["8 hours", "10 hours", "12 hours", "6 hours", "14 hours", "8 hours"];
+const popular = ["1,250", "900", "2,100", "1,800", "950", "1,400"];
+const rating =[4.8, 4.7, 4.6, 4.9, 4.8, 4.8];
+const price=[ "1500", "2000", "1699", "999", "1500","2000" ]
+
+
+ for(let i=0;i<courses.length;i++){
+    cardContainer.innerHTML+=`
+      <div class="course-card" data-level="${levels[i]}">
+            <div class="img-container">
+                <img src="${imgURL[i]}" alt="${courses[i]}">
+
+                <span>${levels[i]}</span>
+
+            </div>
+            <div class="course-info">
+                <h2>${courses[i]}</h2>
+                <p>${descriptions[i]}</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>${duration[i]}</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>${popular[i]}</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>${rating[i]}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹${price[i]}</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="${courses[i]}" onclick="overlay(this)">Demo</button>
+                    <button class="enroll-btn" data-id="${courses[i]}">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+    `
+
+ }
