@@ -16,6 +16,10 @@ body {
     padding: 10px 20px;
     background-color: white;
     color:black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .logo {
     height: 60px;
@@ -69,6 +73,7 @@ body {
 }
 .sidebar-container{
     display: none;
+    z-index: 2000;
 }   
 .sidebar{
     height: 85vh;
@@ -92,6 +97,15 @@ body {
     left: 15px;
     font-size: 25px;
     cursor: pointer;
+    color: black;
+    z-index: 1100;
+
+}
+.cancel i:hover{
+    color: rgb(39, 39, 231);
+     transform: scale(1.1);
+      filter: drop-shadow(20px black);
+       transition: all linear 0.3s;
 }
 .sidebar-links{
     display: flex;
@@ -107,6 +121,14 @@ body {
     border: 1px solid transparent;
     width: 100%;
 
+}
+.sidebar-links a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(39, 39, 231);
+    transition: all linear 0.3s;
+    transform: translateY(-7px);
+  
 }
 .hero-section{
     background:linear-gradient(135deg, #667eea, #764ba2); 
