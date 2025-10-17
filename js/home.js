@@ -41,7 +41,7 @@ const cardDiscription=[
                     <li><i class="fa-solid fa-book"></i> <span id="lessons">${lessonCount[i]}</span></li>
                 </ul>
                 <div class="btn-container">
-                    <button> <a href="#">View Details</a></button>
+                    <button> <a href="./pages/courses.html">View Details</a></button>
                 </div>
     </div>
             </div>
