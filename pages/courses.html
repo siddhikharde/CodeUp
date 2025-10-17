@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/courses.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Courses</title>
 </head>
 <body>
+        <div class="nav-container">
+        <div class="logo-container">
+            <img class="logo" src="../images/logo.png" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../pages/courses.html">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Resume Builder</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar-container">
+        <div class="cancel">
+            <i class="fa-solid fa-xmark" id="close-btn" onclick="hideSidebar()"></i>
+        </div>
+        <div class="sidebar-links">
+            <a href="../index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Resume Builder</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
     
 
     <div class="hero-section">
@@ -34,8 +73,37 @@
        
 
     </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="codeup-info">
+                <img class="footer-logo" src="../images/footer-logo.png" alt="logo">
+                <p>Learn. Code. Grow.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <h3>Contact</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+        © 2025 CodeUp All rights reserved.
+        
+        </div>
+    </div>
 
-
+  <script src="../js/navbar.js"></script>
     <script src="../js/courses.js"></script>
+  
 </body>
 </html>
