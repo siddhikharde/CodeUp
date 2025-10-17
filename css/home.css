@@ -345,3 +345,13 @@ body {
     font-size: 14px;
     color: #555;
 }
+@media (max-width: 1000px) and (min-width: 764px) {
+    .feedback-card{
+        width: 45%;
+    }
+}
+@media (max-width: 765px) {
+    .feedback-card{
+        width: 100%;
+    }
+}
