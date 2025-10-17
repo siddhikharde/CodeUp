@@ -361,12 +361,16 @@ body {
     text-align: center;
     padding: 20px 10px;
    width: 100%;
+   
 }
 .footer-content{
     display: flex;
     gap: 10px;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(96, 97, 98);
 }
 .codeup-info{
     display: flex;
@@ -426,4 +430,10 @@ body {
     color: #ffffff;
     transform: scale(1.06);
     transition: all linear 0.3s;
+}
+.copy-right{
+    color: rgb(156 163 175);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
 }
