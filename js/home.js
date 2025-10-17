@@ -10,5 +10,5 @@ const showSidebar = () =>{
     const hamburger= document.querySelector(".hamburger-menu");
     hamburger.style.opacity="0";
      sidebar.style.display="block";
-   sidebar.style.opacity="1";
+     sidebar.style.opacity="1";
 }

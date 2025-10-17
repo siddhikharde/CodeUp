@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color:black;
+}
+.logo {
+    height: 60px;
+    width: 120px;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+   color: rgb(39, 39, 231);
+}
+.nav-links a:active{
+    text-decoration: underline;
+}
+.dark-mode-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s;
+}
+.dark-mode-toggle:hover {
+    color: #555;
+}
+.hamburger-menu{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+.hamburger-menu i:hover{
+    color: rgb(39, 39, 231);
+     transform: scale(1.1);
+      filter: drop-shadow(20px black);
+       transition: all linear 0.3s;
+}
+@media (max-width:763px) {
+    .nav-links{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+}
+.sidebar-container{
+    display: none;
+}   
+.sidebar{
+    height: 85vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    gap: 10px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 0px 0px 0px 15px ;
+    transition:all linear 0.5s;
+    backdrop-filter: blur(10px);
+ 
+}
+.cancel{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    width: 100%;
+
+}
