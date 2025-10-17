@@ -75,7 +75,7 @@ body {
 .sidebar{
    
     display: none;
-    height: 85vh;
+    height: 450px;
     width: 200px;
     position: fixed;
     top: 0;
