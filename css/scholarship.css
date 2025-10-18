@@ -58,7 +58,11 @@ font-weight: bold;
 
 }
 .text-container span {
-    color:#2563EB;
+   background: linear-gradient(135deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
 }
 .text-container p {
     font-size: 21px;

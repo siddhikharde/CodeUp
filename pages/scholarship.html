@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../css/scholarship.css">
+    <link rel="stylesheet" href="../css/scholarship.css">
     <title>Scholarship</title>
 </head>
+
 <body>
-     <div class="hero-section">
+    <div class="hero-section">
         <div class="heading-container">
             <div class="scholarship-img-container">
                 <img src="../images/scholarship-page-imgs/blue-scholarship.png" alt="scholarship" height="55px">
@@ -23,7 +25,7 @@
                     scholarships, find the perfect match for your academic goals.</p>
             </div>
         </div>
-         <div class="container">
+        <div class="container">
             <div class="card card1">
                 <div class="img-container">
                     <img src="../images/scholarship-page-imgs/blue-book.png" alt="book" height="22px">
@@ -64,15 +66,14 @@
     </div>
 
     <div class="search-container">
-        
+
         <div class="search">
-            <img src="../images/scholarship-page-imgs/search.png" alt="">
-            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input"
-               >
+            <img src="../images/scholarship-page-imgs/search.png" alt="search">
+            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input" onclick="searchScholarships()">
         </div>
         <div class="categories-container">
             <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
-            <select name="categories" id="categories">
+            <select name="categories" id="categories" onchange="filterCards()">
                 <option value="All">All Categories</option>
                 <option value="Merit-Based">Merit-Based</option>
                 <option value="Need-Based">Need-Based</option>
@@ -82,15 +83,12 @@
         </div>
     </div>
 
-      <div class="scho-cards-container">
-        
-
-       
-
+    <div class="scho-cards-container">
 
     </div>
 
-<script src="../js/scholarship.js"></script>
-    
+    <script src="../js/scholarship.js"></script>
+
 </body>
+
 </html>
